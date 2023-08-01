@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ann Johnnidis</title>
+</head>
+<body>
+    <h1>Images in HTML</h1>
+    <p>Add images into a webpage</p>
+    <img src="images/pom.jpg" alt="photo of pomegranate seeds" title="pomegranate seeds" width="50%">
+    <figure>
+        <img src="images/pom.jpg" alt="photo of pomegranate seeds" title="pomegranate seeds" width="100%">
+        <img src="images/pom.jpg" alt="photo of pomegranate seeds" title="pomegranate seeds" width="45%">
+        <img src="images/pom.jpg" alt="photo of pomegranate seeds" title="pomegranate seeds" width="45%">
+        <figcaption>Photo of pomegranate seeds</figcaption>
+    </figure>
+    <h1 id="picTag">picture tag</h1>
+    <p>Resize the browser window to load different photos of red fruit</p>
+    <picture>
+        <source media="(min-width:1100px)" srcset="images/pom.jpg">
+        <source media="(min-width:800px)" srcset="images/strawberries.jpg">
+        <source media="(min-width:500px)" srcset="images/tomato.jpg">
+        <img src="images/watermelon.jpg" alt="photo of watermelon" width="60%">
+    </picture>
+
+    <!-- LINKS -->
+    <h1 id="links">Link to other sites</h1>
+    <a href="https://www.qcc.cuny.edu" target="_blank" rel="noopener noreferrer">Visit QCC website</a>
+    <p><a href="mailto:hwu@qcc.cuny.edu">Email prof. Wu</a></p>
+    <p>Follow us:</p>
+    <figure>
+        <a href="https://www.tiktok.com/@qcc_cuny" target="_blank" rel="noopener noreferrer">
+            <img src="images/tiktok_logo.svg" alt="image of tiktok logo: follow us on tiktok" width="20%">
+        </a>
+        <a href="https://twitter.com/qcc_cuny" target="_blank" rel="noopener noreferrer">
+            <img src="images/twitter_logo.svg" alt="image of twitter logo: follow us on Twitter" width="20%">
+        </a>
+    </figure>
+    <h1>Link to a specific park of the same webpage</h1>
+    <ul>
+        <li>
+            <a href="#">Top of the page</a>
+        </li>
+        <li>
+            <a href="#picTag">Picture Tag</a>
+        </li>
+        <li>
+            <a href="#links">Links</a>
+        </li>
+    </ul>
+    <h1>map tag</h1>
+    <figure>
+        <img src="images/pom.jpg" width="500px" usemap="#pomegranate">
+    </figure>
+    <map name="pomegranate">
+        <area shape="rect" coords="68px,90px,252px,255px" href="https://www.pomwonderful.com/" target="_blank" rel="noopener noreferrer">
+        <area shape="circle" coords="340px,70px,50px" href="https://en.wikipedia.org/wiki/Flooring" target="_blank" rel="noopener noreferrer">
+    </map>
+    <hr>
+    <footer>Day 1: HTML review @ Ann Johnnidis</footer>
+</body>
+</html>
