@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ann Johnnidis</title>
+</head>
+<body>
+    <h1>Ann Johnnidis</h1>
+    <script>
+        console.log("Ann Johnnidis")
+        let animal = "cat"
+        let age = 23
+        let bool1 = true
+        let var1 = ""
+        let var2 = null
+        let var3
+    // prompt method
+        let name = prompt("Enter a name: ")
+        let num1 = prompt("Enter number 1")
+        num1 = parseInt(num1)
+        let num2 = parseInt(prompt("Enter number 2"))
+        // check if num1 and num2 is a number
+        let checkNum1 = isNaN(num1)
+        let checkNum2 = isNaN(num2)
+        if (checkNum1){
+            console.log("You didn't enter number 1!")
+            num1=0
+        }
+        if (checkNum2){
+            console.log("You didn't enter number 2!")
+            num2=0
+        }
+    // display value of a variable
+        console.log("Number 1 =", num1, "number 2 =", num2)
+        console.log("Number 1 = " + num1 + " number 2 = " + num2)
+        console.log(`Number 1 = ${num1} number 2 = ${num2}`)
+
+        // -- ARRAYS -- //
+        let fruits = ["oranges","apples","peaches"]
+        console.log(`The second item in array fruits is ${fruits[1]}`)
+        let meals = ["breakfast",['eggs','bread','juice'],'lunch',['fish','salad']]
+        console.log(`Original array = ${fruits}`)
+        // add values to the beginning (index 0) of an array
+        fruits.unshift('bananas', 23)
+        console.log(`Array after unshift method = ${fruits}`)
+        // remove the first element (index 0) in an array
+        fruits.shift()
+        console.log(`Array after shift method = ${fruits}`)
+        // indexOf method
+        let findFruit = 'peaches'
+        let fruit1 = fruits.indexOf(findFruit)
+        console.log(`${findFruit} has index = ${fruit1}`)
+
+        /*------------------------------------------
+        ----------- CONDITIONAL STATEMENT ----------
+        ------------------------------------------*/
+        let day = true
+        let night = false
+        age = 5
+        if (night){
+            console.log(`The statement is ${day}`)
+        }
+        if (age>=21){
+            console.log(`${age} is an adult age`)
+        }
+        else {
+            console.log(`${age} is not an adult age`)
+        }
+        console.log("End of if statement")
+        //  check if two numbers are the same, greater than, or less than
+        if (num1===num2){
+            console.log(`${num1} is the same as ${num2}`)
+        }
+        else if (num1>num2){
+            console.log(`${num1} is greater than ${num2}`)
+        }
+        else {
+            console.log(`${num1} is less than ${num2}`)
+        }
+        // if user didnt enter a name
+        if (name==="" || name === null){
+            console.log("You didn't enter a name properly")
+        }
+        else{
+            console.log(`Welcome to JS ${name}`)
+        }
+        // example 6) check if a password is at least six characters and has no space
+        let password = prompt("Enter a password: ")
+        if (password.length<6){
+            console.log("Passport has less than 6 characters!")
+        }
+        else {
+            console.log('Password has 6+ characters')
+            if (password.indexOf(' ')=== -1){
+                console.log(`Great! Password has no space. Your password is ${password}`)
+            }
+            else {
+                console.log(`Warning! Password can't have a space!`)
+            }
+        }
+        </script>
+        <script src="day4.js"></script>
+</body>
+</html>
