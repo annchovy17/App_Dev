@@ -8,11 +8,13 @@ img {
 h1 {
     margin-bottom: 0;
     margin-left: 1%;
+    text-decoration: underline;
 }
 .moreInfo {
     margin-top: 2px;
     margin-left: 1%;
     font-size: medium;
+    color: navy;
 }
 .mainBox {
     width: 60%;
@@ -68,6 +70,9 @@ h1 {
     right: 10%;
     text-shadow: 2px 2px 5px white;
 }
+.cardInfo:hover .paragraph2 {
+    transform: translateX(200%);
+}
 .cardInfo p:nth-child(1) {
     font-weight: bolder;
     margin-bottom: 0;
@@ -75,6 +80,7 @@ h1 {
 .cardInfo p:nth-child(2) {
     font-size: small;
     margin-top: 0;
+    transition: ease 800ms;
 }
 .card2 {
     width: 22%;
@@ -97,6 +103,7 @@ h1 {
 }
 .cardInfo2 p:nth-child(1){
     font-size: small;
+    font-weight: bold;
     margin-bottom: 2px;
 }
 .cardInfo2 p:nth-child(2){
