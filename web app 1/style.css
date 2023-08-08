@@ -1,0 +1,144 @@
+body{
+    background-color: lightskyblue;
+}
+img {
+    width: 100%;
+    height: 100%;
+}
+h1 {
+    margin-bottom: 0;
+    margin-left: 1%;
+}
+.moreInfo {
+    margin-top: 2px;
+    margin-left: 1%;
+    font-size: medium;
+}
+.mainBox {
+    width: 60%;
+    margin: 3em auto;
+    display: flex;
+}
+.imgBox {
+    position: relative;
+    border-radius: 8px;
+    overflow: hidden;
+    width: 100%;
+}
+.imgBox:hover {
+    box-shadow: 2px 2px 20px gray;
+}
+.busName{
+    position: absolute;
+    top: 0%;
+    bottom: 60%;
+    left: 0%;
+    right: 0%;
+    text-align: center;
+    font-size: 40px;
+    text-shadow: 1px 1px 3px pink;
+    color: white;
+    width: 100%;
+}
+.cardContainer {
+    display: flex;
+    width: 90%;
+    margin: 2.5em auto;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.card {
+    width: 22%;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 2px 2px 5px 2px gray;
+    overflow: hidden;
+    position: relative;
+}
+.card:hover{
+    transform: scale(1.02);
+    box-shadow: 0px 0px 5px 1px yellowgreen;
+}
+.cardInfo {
+    position: absolute;
+    border-radius: 8px;
+    top: 1%;
+    bottom: 80%;
+    left: 10%;
+    right: 10%;
+    text-shadow: 2px 2px 5px white;
+}
+.cardInfo p:nth-child(1) {
+    font-weight: bolder;
+    margin-bottom: 0;
+}
+.cardInfo p:nth-child(2) {
+    font-size: small;
+    margin-top: 0;
+}
+.card2 {
+    width: 22%;
+    border-radius: 8px;
+    box-shadow: 2px 2px 5px 2px gray;
+    overflow: auto;
+    display: grid;
+    margin-bottom: 2em;
+}
+#shot{
+    scale: 40%;
+}
+#house{
+    scale: 50%;
+}
+#bowl{scale: 50%;}
+.cardInfo2 {
+    padding-left: 10%;
+    padding-right: 5%;
+}
+.cardInfo2 p:nth-child(1){
+    font-size: small;
+    margin-bottom: 2px;
+}
+.cardInfo2 p:nth-child(2){
+    color:navy;
+    margin-top: 0;
+    padding-bottom: 18%;
+    font-size: xx-small;
+}
+.card2:hover {
+    animation: changeColor 2s 3 alternate;
+}
+footer {
+    font-size: smaller;
+}
+
+@keyframes changeColor {
+    from {background-color: rgba(233, 166, 201, 0.7);}
+    to {background-color: rgba(242, 249, 163, 0.66);}
+}
+
+@media screen and (max-width: 500px){
+    .cardContainer{
+        display: grid;
+    }
+    .card, .card2{
+        width: 80%;
+        overflow: auto;
+    }
+    .busName, h1, .moreInfo{
+        font-size: large;
+    }
+}
+@media screen and (max-width:700px) {
+    body{background-color: white;}
+}
+
+@media screen and (max-width:1000px) {
+    *{font-family: Verdana, Geneva, Tahoma, sans-serif;}
+}
+@media screen and (min-width:1002px) {
+    *p{font-weight: bold;}
+    h1, .moreInfo {
+        color: white;
+    }
+}
